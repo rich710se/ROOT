@@ -1,4 +1,4 @@
-# NB!: Untested!
+#Sync device states
 
 ```yaml
 - alias: 'Share state test'
