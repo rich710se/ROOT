@@ -2,63 +2,486 @@
     {
         "data": [
             {
-                "component": "ifttt",
-                "description": "Migrate Mailgun to use the webhook component ",
-                "doclink": "https://www.home-assistant.io/components/ifttt",
-                "pr": "17464",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/17464"
+                "component": "sabnzbd",
+                "description": "Converted SABnzbd to a component ",
+                "doclink": "https://www.home-assistant.io/components/sabnzbd",
+                "pr": "12915",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/12915"
             },
             {
-                "component": "twilio",
-                "description": "Migrate twilio webhooks to the webhook component ",
-                "doclink": "https://www.home-assistant.io/components/twilio",
-                "pr": "17715",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/17715"
+                "component": "bmw_connected_drive",
+                "description": "For BMW electric cars: The current sensor remaining_range_fuel is replaced by remaining_range_total for cars with a combustion engine. ",
+                "doclink": "https://www.home-assistant.io/components/bmw_connected_drive",
+                "pr": "14293",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14293"
             },
             {
-                "component": "climate.vera",
-                "description": "Fix Vera climate component to use correct states ",
-                "doclink": "https://www.home-assistant.io/components/climate.vera",
-                "pr": "17892",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/17892"
+                "component": "notify",
+                "description": "Removed simplepush.io becayse website is offline and apps are no longer available. ",
+                "doclink": "https://www.home-assistant.io/components/notify",
+                "pr": "14358",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14358"
             },
             {
-                "component": "dialogflow",
-                "description": "Migrate dialogflow over to the new webhook component ",
-                "doclink": "https://www.home-assistant.io/components/dialogflow",
-                "pr": "17804",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/17804"
+                "component": "sensor.darksky",
+                "description": "DarkSky sensor: Added temperature (apparent) high/low, deprecated max/min ",
+                "doclink": "https://www.home-assistant.io/components/sensor.darksky",
+                "pr": "12233",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/12233"
+            }
+        ],
+        "version": "0.70.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.bom",
+                "description": "BOM sensor: 'Wind Direction kt' to 'Wind Speed kt' (fixes #14535) ",
+                "doclink": "https://www.home-assistant.io/components/sensor.bom",
+                "pr": "14541",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14541"
+            },
+            {
+                "component": "raincloud",
+                "description": "Removed attribute current_time from Raincloudy sensors to avoid being triggered by recorder component ",
+                "doclink": "https://www.home-assistant.io/components/raincloud",
+                "pr": "14584",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14584"
+            },
+            {
+                "component": "notify",
+                "description": "Remove Notify My Android component as it shut down on May 24 ",
+                "doclink": "https://www.home-assistant.io/components/notify",
+                "pr": "14594",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14594"
+            },
+            {
+                "component": "sensor.coinmarketcap",
+                "description": "CoinMarketCap sensor: It is no longer possible to query a ticker by the name of the currency (i.e. bitcoin). The API instead uses IDs (integers) for these tickers (i.e. bitcoin -&gt; 1). Rounding of decimals is now configurable, because it made no sense to round to 2 decimals if display_currency was set to BTC, some values showed up as 0.00. (#14437) ",
+                "doclink": "https://www.home-assistant.io/components/sensor.coinmarketcap",
+                "pr": "14604",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14604"
+            },
+            {
+                "component": "zwave",
+                "description": "Give unknown zwave nodes a better name and don`t add them to entity registry ",
+                "doclink": "https://www.home-assistant.io/components/zwave",
+                "pr": "14353",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14353"
+            },
+            {
+                "component": "automation",
+                "description": "Disallow automation.trigger without entity_id. Triggering all automations at once is most likely a user mistake but if it is really needed, one can use entity_id: group.all_automations. ",
+                "doclink": "https://www.home-assistant.io/components/automation",
+                "pr": "14724",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14724"
+            },
+            {
+                "component": "sensor.netdata",
+                "description": "Allow user-defined sensors ",
+                "doclink": "https://www.home-assistant.io/components/sensor.netdata",
+                "pr": "14613",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14613"
+            },
+            {
+                "component": "notify",
+                "description": "Revert Remove simplepush.io ",
+                "doclink": "https://www.home-assistant.io/components/notify",
+                "pr": "14358",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14358"
+            }
+        ],
+        "version": "0.71.x"
+    },
+    {
+        "data": [
+            {
+                "component": "frontend",
+                "description": "For developers of custom panel: Remove ability to register panels directly with the frontend component. Register with custom panel component instead. ",
+                "doclink": "https://www.home-assistant.io/components/frontend",
+                "pr": "14805",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14805"
+            },
+            {
+                "component": "sensor.hive",
+                "description": "Rename Hive hub friendly name to include Hive name ",
+                "doclink": "https://www.home-assistant.io/components/sensor.hive",
+                "pr": "14747",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14747"
+            },
+            {
+                "component": "sensor.homematic",
+                "description": "Homematic: RotaryHandleSensorIP states will now report open, tilt, closed ",
+                "doclink": "https://www.home-assistant.io/components/sensor.homematic",
+                "pr": "14885",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14885"
             },
             {
                 "component": "doorbird",
-                "description": "Update to DoorBirdPy v2 (again) ",
+                "description": "Add support for multiple Doorbird stations ",
                 "doclink": "https://www.home-assistant.io/components/doorbird",
-                "pr": "14933",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/14933"
+                "pr": "13994",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/13994"
             },
             {
-                "component": "sensor.sense",
-                "description": "Add binary sensors for sense energy monitor ",
-                "doclink": "https://www.home-assistant.io/components/sensor.sense",
-                "pr": "17645",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/17645"
+                "component": "sensor.airvisual",
+                "description": "AirVisual: The radius configuration parameter no longer does anything and has been removed. This won`t negatively impact any existing integrations. Second, this PR will modify the unique IDs for each sensor to correctly include the locale. New unique IDs will now include <em>us</em> and <em>cn</em> ",
+                "doclink": "https://www.home-assistant.io/components/sensor.airvisual",
+                "pr": "14943",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14943"
+            },
+            {
+                "component": "media_player",
+                "description": "Sonos and Cast are now configured via config entries. Go to the integrations tab in config panel to set it up. ",
+                "doclink": "https://www.home-assistant.io/components/media_player",
+                "pr": "14955",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14955"
+            },
+            {
+                "component": "eight_sleep",
+                "description": "Eight Sleep add REM type, Update async syntax, Catch API quirks ",
+                "doclink": "https://www.home-assistant.io/components/eight_sleep",
+                "pr": "14937",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14937"
+            },
+            {
+                "component": "light.tplink",
+                "description": "Fix energy meter for HS110 v2 users. Not a breaking change unless you are using a custom component  ",
+                "doclink": "https://www.home-assistant.io/components/light.tplink",
+                "pr": "15001",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15001"
+            }
+        ],
+        "version": "0.72.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.pi_hole",
+                "description": "The pi_hole sensor is now limited to ads_blocked_today by default and will no longer show all available data. Use <a href=\"/components/sensor.pi_hole/#monitored_conditions\">monitored_conditions</a> to list the sensors you want. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.pi_hole",
+                "pr": "15014",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15014"
+            },
+            {
+                "component": "sensor.postnl",
+                "description": "Update PostNL unit of measure to packages to align with UPS ",
+                "doclink": "https://www.home-assistant.io/components/sensor.postnl",
+                "pr": "15023",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15023"
             },
             {
                 "component": "sensor.pollen",
-                "description": "Update Pollen.com to use numpy for trend analysis ",
+                "description": "Various attributes have been relocated to sensors that make more sense; additionally, some names are corrected. More info in <a href=\"https://github.com/home-assistant/home-assistant/pull/14963\" rel=\"external nofollow\">#14963</a> ",
                 "doclink": "https://www.home-assistant.io/components/sensor.pollen",
-                "pr": "18107",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/18107"
+                "pr": "14963",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14963"
             },
             {
-                "component": "ffmpeg",
-                "description": "Remove config (breaking change) ",
-                "doclink": "https://www.home-assistant.io/components/ffmpeg",
-                "pr": "18153",
-                "prlink": "https://github.com/home-assistant/home-assistant/pull/18153"
+                "component": "prometheus",
+                "description": "The filter option for prometheus was aligned with other components ",
+                "doclink": "https://www.home-assistant.io/components/prometheus",
+                "pr": "13738",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/13738"
+            },
+            {
+                "component": "climate.zwave",
+                "description": "Change some operation_modes for Z-Wave climate devices to comply with Home Assistant standards and compatibility with Google Home, Alexa and HomeKit. ",
+                "doclink": "https://www.home-assistant.io/components/climate.zwave",
+                "pr": "15162",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15162"
+            },
+            {
+                "component": "emulated_hue",
+                "description": "HTTP component: Anyone who has enabled use_x_forwarded_for will need to explicitly whitelist their proxy/proxies using the new trusted_proxies setting. ",
+                "doclink": "https://www.home-assistant.io/components/emulated_hue",
+                "pr": "15204",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15204"
+            },
+            {
+                "component": "http",
+                "description": "Stop supporting deprecated TLS ciphers ",
+                "doclink": "https://www.home-assistant.io/components/http",
+                "pr": "15217",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15217"
+            },
+            {
+                "component": "light.lifx",
+                "description": "LIFX will no longer report hs_color/rgb_color and color_temp simultaneously. ",
+                "doclink": "https://www.home-assistant.io/components/light.lifx",
+                "pr": "15234",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15234"
             }
         ],
-        "version": "0.82.x"
+        "version": "0.73.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.fixer",
+                "description": "Fixer.io has changed their API and now requires an API key. (fixes #14911) ",
+                "doclink": "https://www.home-assistant.io/components/sensor.fixer",
+                "pr": "15279",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15279"
+            },
+            {
+                "component": "sensor.synologydsm",
+                "description": "Add support to use HTTPS URLs to SynologyDSM and make it the default ",
+                "doclink": "https://www.home-assistant.io/components/sensor.synologydsm",
+                "pr": "15270",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15270"
+            },
+            {
+                "component": "homekit_controller",
+                "description": "HomeKit Controller: Ignore discovering the HomeKit component and HomeKit devices which offer native local API ",
+                "doclink": "https://www.home-assistant.io/components/homekit_controller",
+                "pr": "15316",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15316"
+            },
+            {
+                "component": "light.limitlessled",
+                "description": "LimitlessLED will no longer report hs_color/rgb_color and color_temp simultaneously. ",
+                "doclink": "https://www.home-assistant.io/components/light.limitlessled",
+                "pr": "15298",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15298"
+            },
+            {
+                "component": "http",
+                "description": "IP Ban: Reset failed login attempts counter when login success ",
+                "doclink": "https://www.home-assistant.io/components/http",
+                "pr": "15564",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15564"
+            }
+        ],
+        "version": "0.74.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.moon",
+                "description": "Moon sensor states are now lowercase with underscores instead of spaces, allowing it to be translated in the frontend. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.moon",
+                "pr": "15498",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15498"
+            },
+            {
+                "component": "insteon_plm",
+                "description": "Insteon Mini-Remote now emit events instead of show as a binary sensor ",
+                "doclink": "https://www.home-assistant.io/components/insteon_plm",
+                "pr": "15523",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15523"
+            },
+            {
+                "component": "alarm_control_panel.simplisafe",
+                "description": "Simplisafe to use new API: co, fire, flood, and last_event are no longer part of the SimpliSafe alarm object in the new API and are not available in this upgrade, making this a breaking change for anyone using those. They will be added back in some fashion at a later date (probably exposed as individual sensors) ",
+                "doclink": "https://www.home-assistant.io/components/alarm_control_panel.simplisafe",
+                "pr": "15542",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15542"
+            },
+            {
+                "component": "smappee",
+                "description": "Smappee: The updated library shows the temperature as degrees Celsius instead of centi degrees Celsius. ",
+                "doclink": "https://www.home-assistant.io/components/smappee",
+                "pr": "15636",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15636"
+            }
+        ],
+        "version": "0.75.x"
+    },
+    {
+        "data": [
+            {
+                "component": "deconz",
+                "description": "deCONZ - support for power plugs ",
+                "doclink": "https://www.home-assistant.io/components/deconz",
+                "pr": "15752",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15752"
+            },
+            {
+                "component": "device_tracker",
+                "description": "Keenetic NDMS: user needs to have access to the TelNet interface ",
+                "doclink": "https://www.home-assistant.io/components/device_tracker",
+                "pr": "15511",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15511"
+            },
+            {
+                "component": "weather.openweathermap",
+                "description": "openweathermap: wind speed is now correctly in km/h (fixes #15710) ",
+                "doclink": "https://www.home-assistant.io/components/weather.openweathermap",
+                "pr": "15740",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15740"
+            },
+            {
+                "component": "notify",
+                "description": "Remove Telstra notifiy component: This API has been decomissioned on the 31st of May 2018 by Telstra ",
+                "doclink": "https://www.home-assistant.io/components/notify",
+                "pr": "15757",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15757"
+            },
+            {
+                "component": "http",
+                "description": "HTTP: Make sure use_x_forward_for and trusted_proxies must be configured together ",
+                "doclink": "https://www.home-assistant.io/components/http",
+                "pr": "15804",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15804"
+            },
+            {
+                "component": "velbus",
+                "description": "Velbus: Breaking changes include auto-discovery support so that you don`t need to specify modules manually anymore in the configuration file, but just load the velbus component which will automatically load the switch and binary_sensor platforms. In addition, the fan and light platforms are removed since these should be modeled with template platform based on velbus switches. ",
+                "doclink": "https://www.home-assistant.io/components/velbus",
+                "pr": "13742",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/13742"
+            },
+            {
+                "component": "image_processing.facebox",
+                "description": "Facebox: Events are no longer fired when a face is taught, as these are unnecessary and the info they convey is already in the logs. ",
+                "doclink": "https://www.home-assistant.io/components/image_processing.facebox",
+                "pr": "15439",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15439"
+            },
+            {
+                "component": "switch.amcrest",
+                "description": "AMCrest switch: Fix for multiple camera switches naming of entity. May change switch entity_id. Please check your automation and update the identity-id if you have previously assigned a name to your camera as it appends the name of the camera to the switch id. ",
+                "doclink": "https://www.home-assistant.io/components/switch.amcrest",
+                "pr": "14028",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14028"
+            },
+            {
+                "component": "mqtt",
+                "description": "MQTT embedded broker will no longer rely on HTTP API password to automatically configure itself. You need to set own password. ",
+                "doclink": "https://www.home-assistant.io/components/mqtt",
+                "pr": "15929",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15929"
+            },
+            {
+                "component": "http",
+                "description": "Remove remote.API from core.Config. Might break custom components if they rely on hass.config.api ",
+                "doclink": "https://www.home-assistant.io/components/http",
+                "pr": "15951",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15951"
+            }
+        ],
+        "version": "0.76.x"
+    },
+    {
+        "data": [
+            {
+                "component": "auth",
+                "description": "It`s no longer possible to use a trusted network to connect to the websocket API. You need to get a token and use that to connect.  ",
+                "doclink": "https://www.home-assistant.io/components/auth",
+                "pr": "15812",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15812"
+            },
+            {
+                "component": "vacuum.neato",
+                "description": "Update neato to support new StateVacuumDevice changed some services: turn_on -&gt; start, turn_off -&gt; return_to_dock, toggle has been removed. States \u2018on` and \u2018off` will also no longer be used. ",
+                "doclink": "https://www.home-assistant.io/components/vacuum.neato",
+                "pr": "16035",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16035"
+            },
+            {
+                "component": "api",
+                "description": "The previously deprecated package homeassistant.remote has been removed. ",
+                "doclink": "https://www.home-assistant.io/components/api",
+                "pr": "16099",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16099"
+            },
+            {
+                "component": "climate",
+                "description": "Remove unit_of_measurement from climate entities ",
+                "doclink": "https://www.home-assistant.io/components/climate",
+                "pr": "16012",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16012"
+            },
+            {
+                "component": "upnp",
+                "description": "Upnp component no longer enables port mapping by default ",
+                "doclink": "https://www.home-assistant.io/components/upnp",
+                "pr": "16108",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16108"
+            }
+        ],
+        "version": "0.77.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.geizhals",
+                "description": "Geizhals: config has changed. Remove domain and regex, specify locale instead: AT, EU, DE, UK or PL. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.geizhals",
+                "pr": "15990",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15990"
+            },
+            {
+                "component": "sensor.enphase_envoy",
+                "description": "Update to EnvoyReader 0.2, support for more hardware. Change keys in monitored_conditions from 7_days_production and 7_days_consumption to seven_days_production and seven_days_consumption ",
+                "doclink": "https://www.home-assistant.io/components/sensor.enphase_envoy",
+                "pr": "16212",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16212"
+            },
+            {
+                "component": "sensor.miflora",
+                "description": "Fix Mi Flora median calculation. Removed retries and timeout config parameters, they were not used for several months. Replaced cache_value config with scan_interval to fix a bug in the PR. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.miflora",
+                "pr": "16085",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16085"
+            },
+            {
+                "component": "sensor.twitch",
+                "description": "Twitch now requires a client_id and so the platform got updated. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.twitch",
+                "pr": "16428",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16428"
+            },
+            {
+                "component": "climate.radiotherm",
+                "description": "The radiotherm fan and mode state attributes were updated to reflect the real-time fan and mode states of the thermostat, rather than the overall selected state (automatic, mostly). The mode attributes still contain the selected modes (fan on/auto, heat/cool/auto). ",
+                "doclink": "https://www.home-assistant.io/components/climate.radiotherm",
+                "pr": "15031",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15031"
+            },
+            {
+                "component": "sensor.dnsip",
+                "description": "The dnsip sensor now uses myip as default name. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.dnsip",
+                "pr": "16205",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16205"
+            },
+            {
+                "component": "sensor.trafikverket_weatherstation",
+                "description": "Rewrite of Trafikverket weather - Multiple sensor types supported ",
+                "doclink": "https://www.home-assistant.io/components/sensor.trafikverket_weatherstation",
+                "pr": "15935",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/15935"
+            }
+        ],
+        "version": "0.78.x"
+    },
+    {
+        "data": [
+            {
+                "component": "sensor.netdata",
+                "description": "Netdata configuration change: Allows multiple elements per group. Specify the data_group as part of the sensor description. See docs for details. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.netdata",
+                "pr": "16656",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16656"
+            },
+            {
+                "component": "sensor.dyson",
+                "description": "The Dyson sensor Air Quality Index is now named AQI following Dyson`s mobile app ",
+                "doclink": "https://www.home-assistant.io/components/sensor.dyson",
+                "pr": "14550",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14550"
+            },
+            {
+                "component": "zoneminder",
+                "description": "The zoneminder switch platform now uses new names. ",
+                "doclink": "https://www.home-assistant.io/components/zoneminder",
+                "pr": "16527",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16527"
+            }
+        ],
+        "version": "0.79.x"
     },
     {
         "data": [
@@ -162,5 +585,141 @@
             }
         ],
         "version": "0.80.x"
+    },
+    {
+        "data": [
+            {
+                "component": "opentherm_gw",
+                "description": "Rewrite opentherm_gw to a component ",
+                "doclink": "https://www.home-assistant.io/components/opentherm_gw",
+                "pr": "17133",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17133"
+            },
+            {
+                "component": "openuv",
+                "description": "Fixes an issue with OpenUV config import failing ",
+                "doclink": "https://www.home-assistant.io/components/openuv",
+                "pr": "17831",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17831"
+            },
+            {
+                "component": "lifx",
+                "description": "LIFX can now be configured from the integrations page in the config panel and advanced configuration is available through the lifx: component configuration. Configuring LIFX via light platform config no longer works. ",
+                "doclink": "https://www.home-assistant.io/components/lifx",
+                "pr": "17201",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17201"
+            },
+            {
+                "component": "climate.daikin",
+                "description": "Daikin Climate now follows the official operating modes, making it compatible with Google Assistant, Alexa and HomeKit. ",
+                "doclink": "https://www.home-assistant.io/components/climate.daikin",
+                "pr": "16913",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16913"
+            },
+            {
+                "component": "sensor.template",
+                "description": "Template sensors for which we could not determine what states to track to re-render will now only be updated when manually refreshed using the new homeassistant.update_entity service. ",
+                "doclink": "https://www.home-assistant.io/components/sensor.template",
+                "pr": "17276",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17276"
+            },
+            {
+                "component": "octoprint",
+                "description": "Changed config to make it possible to define multiple Octoprint printers ",
+                "doclink": "https://www.home-assistant.io/components/octoprint",
+                "pr": "16519",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16519"
+            },
+            {
+                "component": "simplisafe",
+                "description": "SimpliSafe has a new configuration format ",
+                "doclink": "https://www.home-assistant.io/components/simplisafe",
+                "pr": "17148",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17148"
+            },
+            {
+                "component": "water_heater",
+                "description": "Econet is now part of the new water heater component, changing entities from climate.* to water_heater.* ",
+                "doclink": "https://www.home-assistant.io/components/water_heater",
+                "pr": "17322",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17322"
+            },
+            {
+                "component": "sensor.speedtest",
+                "description": "Remove day as a conf option as it`s no longer supported ",
+                "doclink": "https://www.home-assistant.io/components/sensor.speedtest",
+                "pr": "17452",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17452"
+            },
+            {
+                "component": "climate",
+                "description": "Wink water heaters were moved to the new water heater implementation. All Wink water heaters will automatically be moved from climate.wate_heater to water_heater.water_heater Please update your configuration to use water_heater now. ",
+                "doclink": "https://www.home-assistant.io/components/climate",
+                "pr": "17504",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17504"
+            }
+        ],
+        "version": "0.81.x"
+    },
+    {
+        "data": [
+            {
+                "component": "ifttt",
+                "description": "Migrate Mailgun to use the webhook component ",
+                "doclink": "https://www.home-assistant.io/components/ifttt",
+                "pr": "17464",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17464"
+            },
+            {
+                "component": "twilio",
+                "description": "Migrate twilio webhooks to the webhook component ",
+                "doclink": "https://www.home-assistant.io/components/twilio",
+                "pr": "17715",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17715"
+            },
+            {
+                "component": "climate.vera",
+                "description": "Fix Vera climate component to use correct states ",
+                "doclink": "https://www.home-assistant.io/components/climate.vera",
+                "pr": "17892",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17892"
+            },
+            {
+                "component": "dialogflow",
+                "description": "Migrate dialogflow over to the new webhook component ",
+                "doclink": "https://www.home-assistant.io/components/dialogflow",
+                "pr": "17804",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17804"
+            },
+            {
+                "component": "doorbird",
+                "description": "Update to DoorBirdPy v2 (again) ",
+                "doclink": "https://www.home-assistant.io/components/doorbird",
+                "pr": "14933",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14933"
+            },
+            {
+                "component": "sensor.sense",
+                "description": "Add binary sensors for sense energy monitor ",
+                "doclink": "https://www.home-assistant.io/components/sensor.sense",
+                "pr": "17645",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17645"
+            },
+            {
+                "component": "sensor.pollen",
+                "description": "Update Pollen.com to use numpy for trend analysis ",
+                "doclink": "https://www.home-assistant.io/components/sensor.pollen",
+                "pr": "18107",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/18107"
+            },
+            {
+                "component": "ffmpeg",
+                "description": "Remove config (breaking change) ",
+                "doclink": "https://www.home-assistant.io/components/ffmpeg",
+                "pr": "18153",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/18153"
+            }
+        ],
+        "version": "0.82.x"
     }
 ]
