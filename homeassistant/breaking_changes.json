@@ -59,5 +59,108 @@
             }
         ],
         "version": "0.82.x"
+    },
+    {
+        "data": [
+            {
+                "component": "blink",
+                "description": "Overhaul of Blink platform ",
+                "doclink": "https://www.home-assistant.io/components/blink",
+                "pr": "16942",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16942"
+            },
+            {
+                "component": "notify",
+                "description": "Tibber component and notify ",
+                "doclink": "https://www.home-assistant.io/components/notify",
+                "pr": "17062",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17062"
+            },
+            {
+                "component": "netatmo",
+                "description": "Add additional Netatmo public data sensors ",
+                "doclink": "https://www.home-assistant.io/components/netatmo",
+                "pr": "16671",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16671"
+            },
+            {
+                "component": "google_assistant",
+                "description": "Google Assistant: configuration has been simplified and relies on HA native OAuth2 flow ",
+                "doclink": "https://www.home-assistant.io/components/google_assistant",
+                "pr": "16848",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16848"
+            },
+            {
+                "component": "rachio",
+                "description": "Rachio component has been modernized. The Rachio component no longer requires you to specify switch and binary_sensor platforms. These platforms will be initialized automatically by the Rachio component. ",
+                "doclink": "https://www.home-assistant.io/components/rachio",
+                "pr": "16911",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16911"
+            },
+            {
+                "component": "hue",
+                "description": "A manually configured Hue component will no longer run a discovery. Set up via config entry if you want to rely on discovery.  ",
+                "doclink": "https://www.home-assistant.io/components/hue",
+                "pr": "17070",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17070"
+            },
+            {
+                "component": "cover",
+                "description": "Update cover tests ",
+                "doclink": "https://www.home-assistant.io/components/cover",
+                "pr": "16832",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16832"
+            },
+            {
+                "component": "duckdns",
+                "description": "Remove service helper (3) ",
+                "doclink": "https://www.home-assistant.io/components/duckdns",
+                "pr": "16879",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16879"
+            },
+            {
+                "component": "alarm_control_panel",
+                "description": "Remove service helper (2) ",
+                "doclink": "https://www.home-assistant.io/components/alarm_control_panel",
+                "pr": "16863",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16863"
+            },
+            {
+                "component": "lock",
+                "description": "Remove service helper (4) ",
+                "doclink": "https://www.home-assistant.io/components/lock",
+                "pr": "16892",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16892"
+            },
+            {
+                "component": "config",
+                "description": "Remove service helper (5) ",
+                "doclink": "https://www.home-assistant.io/components/config",
+                "pr": "16917",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16917"
+            },
+            {
+                "component": "automation",
+                "description": "Remove service helper (6) ",
+                "doclink": "https://www.home-assistant.io/components/automation",
+                "pr": "16920",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/16920"
+            },
+            {
+                "component": "alert",
+                "description": "Remove alert service helper ",
+                "doclink": "https://www.home-assistant.io/components/alert",
+                "pr": "17038",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17038"
+            },
+            {
+                "component": "config",
+                "description": "Remove service helper (8) ",
+                "doclink": "https://www.home-assistant.io/components/config",
+                "pr": "17055",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17055"
+            }
+        ],
+        "version": "0.80.x"
     }
 ]
