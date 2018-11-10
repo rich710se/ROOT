@@ -1,3 +1,63 @@
 [
-
+    {
+        "data": [
+            {
+                "component": "ifttt",
+                "description": "Migrate Mailgun to use the webhook component ",
+                "doclink": "https://www.home-assistant.io/components/ifttt",
+                "pr": "17464",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17464"
+            },
+            {
+                "component": "twilio",
+                "description": "Migrate twilio webhooks to the webhook component ",
+                "doclink": "https://www.home-assistant.io/components/twilio",
+                "pr": "17715",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17715"
+            },
+            {
+                "component": "climate.vera",
+                "description": "Fix Vera climate component to use correct states ",
+                "doclink": "https://www.home-assistant.io/components/climate.vera",
+                "pr": "17892",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17892"
+            },
+            {
+                "component": "dialogflow",
+                "description": "Migrate dialogflow over to the new webhook component ",
+                "doclink": "https://www.home-assistant.io/components/dialogflow",
+                "pr": "17804",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17804"
+            },
+            {
+                "component": "doorbird",
+                "description": "Update to DoorBirdPy v2 (again) ",
+                "doclink": "https://www.home-assistant.io/components/doorbird",
+                "pr": "14933",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/14933"
+            },
+            {
+                "component": "sensor.sense",
+                "description": "Add binary sensors for sense energy monitor ",
+                "doclink": "https://www.home-assistant.io/components/sensor.sense",
+                "pr": "17645",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/17645"
+            },
+            {
+                "component": "sensor.pollen",
+                "description": "Update Pollen.com to use numpy for trend analysis ",
+                "doclink": "https://www.home-assistant.io/components/sensor.pollen",
+                "pr": "18107",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/18107"
+            },
+            {
+                "component": "ffmpeg",
+                "description": "Remove config (breaking change) ",
+                "doclink": "https://www.home-assistant.io/components/ffmpeg",
+                "pr": "18153",
+                "prlink": "https://github.com/home-assistant/home-assistant/pull/18153"
+            }
+        ],
+        "version": "0.82.x"
+    }
 ]
