@@ -45,7 +45,10 @@ for HA_URL in HA_URLS:
                 pr = str(change).split('home-assistant/home-assistant/pull/')[1].split('"')[0]
                 if pr not in CONTROL:
                     prlink = 'https://github.com/home-assistant/home-assistant/pull/{}'.format(pr)
-                    component = str(change).split('(<a href="/components/')[1].split('/">')[0]
+                    try:
+                        component = str(change).split('(<a href="/components/')[1].split('/">')[0]
+                    except:
+                        component = ''
                     doclink = 'https://www.home-assistant.io/components/{}'.format(component)
                     description = str(change).split('  <li>')[1].split('(<a ')[0].replace('</code>','').replace('<code class="highlighter-rouge">','').replace('\u2019','`').replace('\u201c','').replace('\u201d','')
                     PR['pr'] = pr
