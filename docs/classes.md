@@ -6,6 +6,18 @@
 
 ***
 
+## Classes for the `Cast` platform.
+
+- [Assistant](https://ludeeus.github.io/ROOT/classes/cast/assistant)
+- [Bluetooth](https://ludeeus.github.io/ROOT/classes/cast/bluetooth)
+- [Info](https://ludeeus.github.io/ROOT/classes/cast/info)
+- [Settings](https://ludeeus.github.io/ROOT/classes/cast/settings)
+- [Wifi](https://ludeeus.github.io/ROOT/classes/cast/wifi)
+
+## Classes for the `WiFi` platform.
+
+- [Clients](https://ludeeus.github.io/ROOT/classes/wifi/clients)
+- [Info](https://ludeeus.github.io/ROOT/classes/wifi/info)
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices
