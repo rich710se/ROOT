@@ -6,54 +6,23 @@
 
 ***
 
-## [Cast](https://ludeeus.github.io/ROOT/platforms#cast) - [Assistant](https://ludeeus.github.io/ROOT/classes/cast/assistant) - [`set_night_mode_params`](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_night_mode_params)
-
-This takes one required parameter.  
-This **needs** to be formated like this:
-
-```json
-{
-  "enabled": false,
-  "do_not_disturb": true,
-  "led_brightness": 0.44999998807907104,
-  "volume": 0.46000000834465027,
-  "demo_to_user": true,
-  "windows": [
-    {
-      "length_hours": 8,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "start_hour": 22
-    }
-  ]
-}
-```
-
-Only add the keys you want to send, you can also just send `{}`.
+## [Cast](https://ludeeus.github.io/ROOT/platforms#wifi) - [Assistant](https://ludeeus.github.io/ROOT/classes/wifi/info) - [`get_wifi_info`](https://ludeeus.github.io/ROOT/methods/wifi/info/get_wifi_info)
 
 Sample usage:
 
 ```python
-from googledevices.api.connect import Cast
+from googledevices.api.connect import Wifi
 from googledevices.helpers import gdh_session, gdh_loop
 from googledevices.utils.convert import format_json
 
-CAST_HOST = '192.168.2.241'
+WIFI_HOST = '192.168.2.1'
 LOOP = gdh_loop()
 
 async def sample():
     """Sample usage."""
     async with gdh_session() as session:
-        sample_class = await Cast(CAST_HOST, LOOP, session).assistant()
-        data = {}
-        test = await sample_class.set_night_mode_params(data)
+        test_class = await Wifi(WIFI_HOST, LOOP, session).info()
+        test = await test_class.get_wifi_info()
         print(format_json(test))
 LOOP.run_until_complete(sample())
 ```

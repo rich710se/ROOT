@@ -2,17 +2,35 @@
 
 ***
 
-[HOME][home] | [PLATFORMS][platforms] | [CLASSES][classes] | [**METHODS**][methods] | [FUNCTIONS][functions] | [CLI][cli]
+[HOME][home] | [PLATFORMS][platforms] | [CLASSES][classes] | [METHODS][methods] | [**FUNCTIONS**][functions] | [CLI][cli]
 
 ***
 
-## Cast
+## [Functions](https://ludeeus.github.io/ROOT/functions) log functions
 
-### Assistant
+### error
 
- - 
+```python
+# Sample usage
+import googledevices.util.log as log
+log.error("Test log message")
+```
 
+### info
 
+```python
+# Sample usage
+import googledevices.util.log as log
+log.info("Test log message")
+```
+
+### debug
+
+```python
+# Sample usage
+import googledevices.util.log as log
+log.debug("Test log message")
+```
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices

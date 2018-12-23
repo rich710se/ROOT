@@ -2,17 +2,29 @@
 
 ***
 
-[HOME][home] | [PLATFORMS][platforms] | [CLASSES][classes] | [**METHODS**][methods] | [FUNCTIONS][functions] | [CLI][cli]
+[HOME][home] | [PLATFORMS][platforms] | [CLASSES][classes] | [METHODS][methods] | [**FUNCTIONS**][functions] | [CLI][cli]
 
 ***
 
-## Cast
+## [Functions](https://ludeeus.github.io/ROOT/functions) convert functions
 
-### Assistant
+### get_device_type
 
- - 
+```python
+# Sample usage
+# Sample usage
+from googledevices.util.convert import get_device_type
+print(get_device_type(2))
+```
 
+### format_json
 
+```python
+# Sample usage
+from googledevices.util.convert import format_json
+json = {"test": "test"}
+print(format_json(json))
+```
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices

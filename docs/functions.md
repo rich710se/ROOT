@@ -6,12 +6,23 @@
 
 ***
 
+## [Convert functions](https://ludeeus.github.io/ROOT/function/convert)
+
+- [get_device_type](https://ludeeus.github.io/ROOT/function/convert#get_device_type)
+- [format_json](https://ludeeus.github.io/ROOT/function/convert#format_json)
+
 ## [Helper functions](https://ludeeus.github.io/ROOT/function/helper)
 
 - [gdh_loop](https://ludeeus.github.io/ROOT/function/helper#gdh_loop)
 - [gdh_session](https://ludeeus.github.io/ROOT/function/helper#gdh_session)
 - [gdh_sleep](https://ludeeus.github.io/ROOT/function/helper#gdh_sleep)
 - [gdh_request](https://ludeeus.github.io/ROOT/function/helper#gdh_request)
+
+## [Log functions](https://ludeeus.github.io/ROOT/function/log)
+
+- [error](https://ludeeus.github.io/ROOT/function/log#error)
+- [info](https://ludeeus.github.io/ROOT/function/log#info)
+- [debug](https://ludeeus.github.io/ROOT/function/log#debug)
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices

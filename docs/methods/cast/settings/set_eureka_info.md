@@ -6,37 +6,25 @@
 
 ***
 
-## [Cast](https://ludeeus.github.io/ROOT/platforms#cast) - [Assistant](https://ludeeus.github.io/ROOT/classes/cast/assistant) - [`set_night_mode_params`](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_night_mode_params)
+## [Cast](https://ludeeus.github.io/ROOT/platforms#cast) - [Info](https://ludeeus.github.io/ROOT/classes/cast/settings) - [`set_eureka_info`](https://ludeeus.github.io/ROOT/methods/cast/settings/set_eureka_info)
 
 This takes one required parameter.  
 This **needs** to be formated like this:
 
 ```json
 {
-  "enabled": false,
-  "do_not_disturb": true,
-  "led_brightness": 0.44999998807907104,
-  "volume": 0.46000000834465027,
-  "demo_to_user": true,
-  "windows": [
-    {
-      "length_hours": 8,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "start_hour": 22
-    }
-  ]
+  "name": "Living Room",
+  "settings": {
+    "control_notifications": 2
+  },
+  "opt_in": {
+    "opencast": true,
+    "preview_channel": true,
+    "remote_ducking": true,
+    "stats": true
+  }
 }
 ```
-
-Only add the keys you want to send, you can also just send `{}`.
 
 Sample usage:
 
@@ -51,9 +39,9 @@ LOOP = gdh_loop()
 async def sample():
     """Sample usage."""
     async with gdh_session() as session:
-        sample_class = await Cast(CAST_HOST, LOOP, session).assistant()
+        sample_class = await Cast(CAST_HOST, LOOP, session).settings()
         data = {}
-        test = await sample_class.set_night_mode_params(data)
+        test = await sample_class.set_eureka_info(data)
         print(format_json(test))
 LOOP.run_until_complete(sample())
 ```

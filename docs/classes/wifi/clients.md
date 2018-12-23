@@ -2,16 +2,19 @@
 
 ***
 
-[HOME][home] | [PLATFORMS][platforms] | [CLASSES][classes] | [**METHODS**][methods] | [FUNCTIONS][functions] | [CLI][cli]
+[HOME][home] | [PLATFORMS][platforms] | [**CLASSES**][classes] | [METHODS][methods] | [FUNCTIONS][functions] | [CLI][cli]
 
 ***
 
-## Cast
+This class handles methods that are nested under the `clients` endpoint.
 
-### Assistant
+## Methods for the `Clients` class.
 
- - 
+- [get_clients](https://ludeeus.github.io/ROOT/methods/wifi/clients/get_clients)
 
+## Properties for the `Clients` class.
+
+- `clients` Return devices form the network. _You need to run the [get_clients](https://ludeeus.github.io/ROOT/methods/wifi/clients/get_clients) method before this get populated._
 
 
 <!-- menu -->

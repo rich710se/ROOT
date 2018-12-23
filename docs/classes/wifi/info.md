@@ -6,13 +6,18 @@
 
 ***
 
-This class handles methods that are nested under the `settings` endpoint.
+This class handles methods that are nested under the `info` endpoint.
 
-## Methods for the `Settings` class.
+## Methods for the `Info` class.
 
-- [control_notifications](https://ludeeus.github.io/ROOT/methods/cast/settings/control_notifications)
-- [reboot](https://ludeeus.github.io/ROOT/methods/cast/settings/reboot)
-- [set_eureka_info](https://ludeeus.github.io/ROOT/methods/cast/settings/set_eureka_info)
+- [get_host](https://ludeeus.github.io/ROOT/methods/wifi/info/get_host)
+- [get_wifi_info](https://ludeeus.github.io/ROOT/methods/wifi/info/get_wifi_info)
+
+## Properties for the `Info` class.
+
+- `wifi_host` Return the hostname or IP of the device. _You need to run the [get_host](https://ludeeus.github.io/ROOT/methods/wifi/info/get_host) method before this get populated._
+- `wifi_info` Return the device info if any.. _You need to run the [get_host](https://ludeeus.github.io/ROOT/methods/wifi/info/get_host) method before this get populated._
+
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices

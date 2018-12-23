@@ -12,7 +12,7 @@ Sample usage:
 
 ```python
 from googledevices.api.connect import Cast
-from googledevices.helpers import gdh_session, gdh_loop, gdh_sleep
+from googledevices.helpers import gdh_session, gdh_loop
 from googledevices.utils.convert import format_json
 
 CAST_HOST = '192.168.2.241'
