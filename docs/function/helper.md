@@ -20,7 +20,7 @@ loop = gdh_loop()
 
 ### gdh_session
 
-This only returns `ClientSession()` from `aiohttp `.
+This only returns `ClientSession()` from `aiohttp`.
 
 ```python
 # Sample usage
