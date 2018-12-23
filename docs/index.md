@@ -101,7 +101,7 @@ _This is not affiliated, associated, authorized, endorsed by, or in any way offi
 [pypi]:https://pypi.org/project/googledevices/
 [pypi_badge]: https://badge.fury.io/py/googledevices.svg
 [home]: https://ludeeus.github.io/ROOT/index.md
-[platforms]: https://ludeeus.github.io/ROOT/platfroms.md
+[platforms]: https://ludeeus.github.io/ROOT/platforms.md
 [classes]: https://ludeeus.github.io/ROOT/classes.md
 [methods]: https://ludeeus.github.io/ROOT/methods.md
 [functions]: https://ludeeus.github.io/ROOT/functions.md
