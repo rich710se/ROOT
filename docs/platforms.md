@@ -6,6 +6,20 @@
 
 ***
 
+This package are separated into two "platforms" `Cast` and `WiFi`
+
+## Cast
+
+This includes google devices that have the API enabled at port `8008`, this includes but are not limited to:
+
+- ChromeCast (Original/Ultra/Audio)
+- Google Home (Mini/Hub)
+
+_If you know of any more that are supported please open a PR to have it included in this list._
+
+## WiFi
+
+Google WiFi AP's
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices
