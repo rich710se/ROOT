@@ -10,19 +10,19 @@ This class handles methods that are nested under the `assistant` endpoint.
 
 ## Methods for the `Assistant` class.
 
-- [set_night_mode_params](https://ludeeus.github.io/ROOT/methods/cast/set_night_mode_params)
-- [notifications_enabled](https://ludeeus.github.io/ROOT/methods/cast/notifications_enabled)
-- [set_accessibility](https://ludeeus.github.io/ROOT/methods/cast/set_accessibility)
-- [delete_alarms](https://ludeeus.github.io/ROOT/methods/cast/delete_alarms)
-- [set_equalizer](https://ludeeus.github.io/ROOT/methods/cast/set_equalizer)
-- [get_alarms](https://ludeeus.github.io/ROOT/methods/cast/get_alarms)
-- [get_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/get_alarm_volume)
-- [set_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/set_alarm_volume)
+- [set_night_mode_params](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_night_mode_params)
+- [notifications_enabled](https://ludeeus.github.io/ROOT/methods/cast/assistant/notifications_enabled)
+- [set_accessibility](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_accessibility)
+- [delete_alarms](https://ludeeus.github.io/ROOT/methods/cast/assistant/delete_alarms)
+- [set_equalizer](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_equalizer)
+- [get_alarms](https://ludeeus.github.io/ROOT/methods/cast/assistant/get_alarms)
+- [get_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/assistant/get_alarm_volume)
+- [set_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/assistant/set_alarm_volume)
 
 ## Properties for the `Assistant` class.
 
-- `alarms` Returns active alarms and timers. _You need to run the [get_alarms](https://ludeeus.github.io/ROOT/methods/cast/get_alarms) method before this get populated._
-- `alarm_volume` Returns the current alarm volume. _You need to run the [get_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/get_alarm_volume) method before this get populated._
+- `alarms` Returns active alarms and timers. _You need to run the [get_alarms](https://ludeeus.github.io/ROOT/methods/cast/assistant/get_alarms) method before this get populated._
+- `alarm_volume` Returns the current alarm volume. _You need to run the [get_alarm_volume](https://ludeeus.github.io/ROOT/methods/cast/assistant/get_alarm_volume) method before this get populated._
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices
