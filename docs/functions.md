@@ -6,12 +6,12 @@
 
 ***
 
-## [Helper functions]()
+## [Helper functions](https://ludeeus.github.io/ROOT/function/helper)
 
-- []()
-- []()
-- []()
-- []()
+- [gdh_loop](https://ludeeus.github.io/ROOT/function/helper#gdh_loop)
+- [gdh_session](https://ludeeus.github.io/ROOT/function/helper#gdh_session)
+- [gdh_sleep](https://ludeeus.github.io/ROOT/function/helper#gdh_sleep)
+- [gdh_request](https://ludeeus.github.io/ROOT/function/helper#gdh_request)
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices

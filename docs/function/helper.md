@@ -6,7 +6,7 @@
 
 ***
 
-## Helper functions
+## [Functions](https://ludeeus.github.io/ROOT/functions) Helper functions
 
 ### gdh_loop
 
