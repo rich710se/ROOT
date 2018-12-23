@@ -6,6 +6,12 @@
 
 ***
 
+## [Helper functions]()
+
+- []()
+- []()
+- []()
+- []()
 
 <!-- menu -->
 [travis]: https://travis-ci.com/ludeeus/googledevices
