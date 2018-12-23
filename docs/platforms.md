@@ -8,7 +8,7 @@
 
 This package are separated into two "platforms" `Cast` and `WiFi`
 
-## Cast
+## [Cast](https://ludeeus.github.io/ROOT/classes#classes-for-the-cast-platform)
 
 This includes google devices that have the API enabled at port `8008`, this includes but are not limited to:
 
@@ -17,7 +17,7 @@ This includes google devices that have the API enabled at port `8008`, this incl
 
 _If you know of any more that are supported please open a PR to have it included in this list._
 
-## WiFi
+## [WiFi](https://ludeeus.github.io/ROOT/classes#classes-for-the-wifi-platform)
 
 Google WiFi AP's
 

@@ -6,7 +6,7 @@
 
 ***
 
-## Cast - Assistant - `delete_alarms`
+## [Cast](https://ludeeus.github.io/ROOT/platforms#cast) - [Assistant](https://ludeeus.github.io/ROOT/classes/cast/assistant) - [`delete_alarms`](https://ludeeus.github.io/ROOT/methods/cast/assistant/delete_alarms)
 
 This takes one required parameter.  
 This **needs** to be formated like this:
