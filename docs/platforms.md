@@ -1,7 +1,9 @@
 [![Build Status][travis_status]][travis] [![PyPI version][pypi_badge]][pypi] _Get information from, and control various Google devices._
 
 ***
+
 [HOME][home] | [**PLATFORMS**][platforms] | [CLASSES][classes] | [METHODS][methods] | [FUNCTIONS][functions] | [CLI][cli]
+
 ***
 
 
