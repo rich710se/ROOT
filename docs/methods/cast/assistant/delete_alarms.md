@@ -28,10 +28,9 @@ LOOP = gdh_loop()
 async def sample():
     """Sample usage."""
     async with gdh_session() as session:
-        print("Testing Cast - Assistant - delete_alarms")
-        test_class = await Cast(TEST_HOST_CAST, LOOP, session).assistant()
+        sample_class = await Cast(CAST_HOST, LOOP, session).assistant()
         data = [ "timer\/984", "alarm\/234" ]
-        test = await test_class.delete_alarms(data)
+        test = await sample_class.delete_alarms(data)
         print(format_json(test))
 LOOP.run_until_complete(sample())
 ```
