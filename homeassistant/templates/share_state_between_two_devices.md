@@ -1,4 +1,4 @@
-#Sync device states
+# Sync device states
 
 ```yaml
 - alias: 'Share state test'
@@ -14,4 +14,5 @@
           {% set entities = ["light", "switch"] %}
           {{ entities |reject("equalto", trigger.entity_id)|list }}
 ```
+
 Updated by [skalavala](https://github.com/skalavala) to be simpler and scalable.
