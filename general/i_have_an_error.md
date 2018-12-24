@@ -1,4 +1,4 @@
-# I have an error.
+# I have an error
 
 _/rant\_start_
 
