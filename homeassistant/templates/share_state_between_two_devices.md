@@ -12,6 +12,6 @@
       data_template:
         entity_id: >-
           {% set entities = ["light", "switch"] %}
-          {{ entities |reject("equalto", trigger,entity_id)|list }}
+          {{ entities |reject("equalto", trigger.entity_id)|list }}
 ```
 Updated by [skalavala](https://github.com/skalavala) to be simpler and scalable.
