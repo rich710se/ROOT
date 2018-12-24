@@ -1,4 +1,5 @@
 
+```python
 """Append dict to dict."""
 DICT = ['192.168.2.1', '192.168.2.2']
 NEW_KEYS = ['192.168.1.1', '192.168.2.2', '192.168.1.3',
@@ -11,3 +12,4 @@ for key in NEW_KEYS:
     else:
         print('skipping' + key)
 print(DICT)
+```

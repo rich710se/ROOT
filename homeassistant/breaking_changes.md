@@ -1,3 +1,4 @@
+```python
 """Create breaking_change list for HA."""
 import json
 import requests
@@ -64,3 +65,4 @@ for HA_URL in HA_URLS:
 with open('breaking_changes.json', 'w') as file:
     json.dump(NEW_JSON, file, sort_keys=True, indent=4, ensure_ascii=True)
 file.close()
+```
