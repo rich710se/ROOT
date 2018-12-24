@@ -2,7 +2,7 @@
 
 _/rant\_start_
 
-**NO!!**
+**NO!!**  
 **DO NOT DO THIS!**
 
 For some obscure reason there are someone out there that belive that you need to reboot the host after making a configuration change, this _is_ a **lie**!
