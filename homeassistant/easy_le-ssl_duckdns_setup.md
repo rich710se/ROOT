@@ -1,3 +1,4 @@
+```bash
 #!/bin/bash
 #Author: Joakim Sørensen @ludeeus
 #
@@ -128,3 +129,4 @@ else
     exit 1
 fi
 exit 0
+```
