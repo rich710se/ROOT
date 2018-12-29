@@ -27,11 +27,9 @@ usermod -G i2c -a homeassistant
 usermod -G gpio -a homeassistant
 usermod -G spi -a homeassistant
 
-
 echo "Downloading and installing hassbian-config..."
 echo "deb [trusted=yes] https://gitlab.com/hassbian/repository/raw/master stretch main" | sudo tee /etc/apt/sources.list.d/hassbian-config.list
 apt-get update
 apt install -y hassbian-scripts
-
 
 echo "Installation complete..."
