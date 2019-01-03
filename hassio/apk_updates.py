@@ -112,11 +112,13 @@ def get_apk_packages_with_updates(addons):
                 pack = pkg['package']
             data = get_package(pack, pkg['branch'])
             package = data['package']
-            version = data['x86_64']['version']
+            if len(data['versions']) == 1:
+                version = data['versions'][0]
+            else:
+                version = data['x86_64']['version']  # Fallback to x86_64
             if version != pkg['version']:
                 this = {'package': package,
                         'version': version,
-                        'source': 'apk',
                         'search_string': pkg['search_string']}
                 updates.append(this)
             else:
