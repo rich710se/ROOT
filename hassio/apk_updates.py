@@ -1,8 +1,14 @@
-"""Update dependecies for add-ons in the community add-on project."""
+"""
+Update dependecies for add-ons in the community add-on project.
+
+requirements from pypi:
+- alpinepkgs
+- PyGithub
+"""
 from alpinepkgs.packages import get_package
 from github import Github
 
-TOKEN = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+TOKEN = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 COMMIT_MSG = ':arrow_up: Upgrades {} to version {}'
 GH = Github(TOKEN)
 REPO = "{}/{}"
@@ -12,6 +18,22 @@ ADDONS = [
     {
         'repo': 'addon-magicmirror',
         'addon_name': 'magicmirror'
+    },
+    {
+        'repo': 'addon-mqtt',
+        'addon_name': 'mqtt'
+    },
+    {
+        'repo': 'addon-sqlite-web',
+        'addon_name': 'sqlite-web'
+    },
+    {
+        'repo': 'addon-phlex',
+        'addon_name': 'phlex'
+    },
+    {
+        'repo': 'addon-tautulli',
+        'addon_name': 'tautulli'
     }
 ]
 
@@ -50,7 +72,8 @@ def get_apk_packages_with_updates(addons):
         addon_data = {}
         repo = addon['repo']
         repository = REPO.format(ORG, repo)
-        print('Checking for apk uppdates for', repository)
+        print("")
+        print('Checking apk uppdates for', repository)
         file_path = "{}/Dockerfile".format(addon['addon_name'])
         remote_file = get_file_obj(ORG, repo, file_path)
         masterfile = get_file_content(remote_file)
@@ -96,6 +119,8 @@ def get_apk_packages_with_updates(addons):
                         'source': 'apk',
                         'search_string': pkg['search_string']}
                 updates.append(this)
+            else:
+                print(pack, "Allready have the newest version", version)
         if updates:
             addon_data[addon['addon_name']] = {}
             addon_data[addon['addon_name']]['repo'] = addon['repo']
