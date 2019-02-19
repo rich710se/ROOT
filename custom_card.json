@@ -1,0 +1,9 @@
+{
+    "ROOT": {
+      "updated_at": "1970-01-01",
+      "version": "9.0.0",
+      "remote_location": "https://raw.githubusercontent.com/custom-cards/tracker-card/master/tracker-card.js",
+      "visit_repo": "https://github.com/awesome-developer/awesome-card",
+      "changelog": "https://github.com/awesome-developer/awesome-card/releases/latest"
+    }
+}
