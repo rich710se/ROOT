@@ -1,9 +1,8 @@
 {
     "ROOT": {
-      "updated_at": "1970-01-01",
       "version": "9.0.0",
-      "remote_location": "https://raw.githubusercontent.com/maykar/compact-custom-header/master/compact-custom-header.js",
-      "visit_repo": "https://github.com/awesome-developer/awesome-card",
-      "changelog": "https://github.com/awesome-developer/awesome-card/releases/latest"
+      "remote_location": "https://raw.githubusercontent.com/ludeeus/ROOT/master/js/rotate.js",
+      "visit_repo": "https://github.com/ludeeus",
+      "changelog": "https://github.com/ludeeus"
     }
 }
