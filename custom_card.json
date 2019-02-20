@@ -1,7 +1,7 @@
 {
     "ROOT": {
       "version": "9.0.0",
-      "remote_location": "https://raw.githubusercontent.com/ludeeus/ROOT/master/js/rotate.js",
+      "remote_location": "https://raw.githubusercontent.com/ludeeus/ROOT/master/js/bw.js",
       "visit_repo": "https://github.com/ludeeus",
       "changelog": "https://github.com/ludeeus"
     }
