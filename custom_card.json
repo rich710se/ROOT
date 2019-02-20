@@ -1,7 +1,7 @@
 {
     "ROOT": {
       "version": "X.X.X",
-      "remote_location": "https://raw.githubusercontent.com/ludeeus/ROOT/master/js/blur.js",
+      "remote_location": "https://raw.githubusercontent.com/ludeeus/ROOT/master/js/ha_dark_material.js",
       "visit_repo": "https://github.com/ludeeus",
       "changelog": "https://github.com/ludeeus"
     }
