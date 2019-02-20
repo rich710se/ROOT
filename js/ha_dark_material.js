@@ -17,7 +17,7 @@ var css = ` html {
     --primary-color: var(--light_green);
     --light-primary-color: var(--red);
     --dark-primary-color: var(--red);
-    --text-primary-color: var(--red);
+    --text-primary-color: var(--white);
     --primary-background-color: var(--dark_grey);
     --sidebar-text_-_background: var(--red);
     --paper-card-background-color: var(--light_grey);
