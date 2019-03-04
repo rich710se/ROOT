@@ -7,7 +7,7 @@ workflow "Issue" {
 }
 
 action "Discord notification" {
-  uses = "Ilshidur/actions/discord@master"
+  uses = "Ilshidur/action-discord@master"
   secrets = ["DISCORD_WEBHOOK"]
   args = "Action started"
 }
