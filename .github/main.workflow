@@ -1,8 +1,17 @@
 workflow "Issue" {
   on = "issues"
-  resolves = ["docker://ludeeus/tasks"]
+  resolves = [
+    "Discord notification",
+    "Hello World",
+  ]
 }
 
-action "docker://ludeeus/tasks" {
-  uses = "docker://ludeeus/tasks"
+action "Discord notification" {
+  uses = "Ilshidur/actions/discord@master"
+  secrets = ["DISCORD_WEBHOOK"]
+  args = "Action started"
+}
+
+action "Hello World" {
+  uses = "./actions"
 }
