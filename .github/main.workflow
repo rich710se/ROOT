@@ -8,8 +8,8 @@ action "push" {
   env = {
     ACTION_MAIL = "ludeeus@gmail.com"
     ACTION_NAME = "ludeeus"
-    ACTION_BRANCH = "master"
     ACTION_MESSAGE = "Action commit"
+    ACTION_BRANCH = "new-test-branch"
   }
   secrets = ["GITHUB_TOKEN"]
 }
