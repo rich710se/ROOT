@@ -9,14 +9,13 @@ action "push" {
     ACTION_MAIL = "ludeeus@gmail.com"
     ACTION_NAME = "ludeeus"
     ACTION_MESSAGE = "Action commit"
-    ACTION_BRANCH = "new-test-branch"
+    ACTION_BRANCH = "master"
   }
   secrets = ["GITHUB_TOKEN"]
-  needs  = ["HA Index"]
+  needs = ["HA Index"]
 }
 
 action "HA Index" {
   uses = "ludeeus/action-haindex@master"
   secrets = ["GITHUB_TOKEN"]
-  
 }
