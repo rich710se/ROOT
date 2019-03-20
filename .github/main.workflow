@@ -12,10 +12,13 @@ action "push" {
     ACTION_BRANCH = "master"
   }
   secrets = ["GITHUB_TOKEN"]
-  needs = ["HA Index"]
+  needs = ["Create file"]
 }
 
-action "HA Index" {
-  uses = "ludeeus/action-haindex@master"
-  secrets = ["GITHUB_TOKEN"]
+action "Create file" {
+  uses = "finnp/create-file-action@master"
+  env = {
+    FILE_NAME = "example.md"
+    FILE_DATA = "#Example file\nThis is an example"
+  }
 }
