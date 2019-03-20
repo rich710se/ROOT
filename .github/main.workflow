@@ -1,6 +1,6 @@
 workflow "Push it!" {
   on = "push"
-  resolves = ["HA Index"]
+  resolves = ["push"]
 }
 
 action "push" {
@@ -12,10 +12,11 @@ action "push" {
     ACTION_BRANCH = "new-test-branch"
   }
   secrets = ["GITHUB_TOKEN"]
+  needs  = ["HA Index"]
 }
 
 action "HA Index" {
   uses = "ludeeus/action-haindex@master"
   secrets = ["GITHUB_TOKEN"]
-  needs  = ["push"]
+  
 }
