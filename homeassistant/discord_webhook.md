@@ -1,7 +1,7 @@
 # Discord webhook
 
 ```yaml
-notify
+notify discord_webhook:
   - name: discord_webhook
     platform: rest
     method: POST
