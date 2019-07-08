@@ -11,5 +11,5 @@ Clone backend to `backend` with `git clone git@github.com:ludeeus/home-assistant
 **Start the container:**
 
 ```shell
-docker run -it --name HA -p 8123:8123 -v config:/config -v backend:/usr/src/app homeassistant/home-assistant:dev
+docker run -it --name HA -p 8123:8123 -v /Users/ludeeus/DEV-ENV/HA/config:/config -v /Users/ludeeus/DEV-ENV/HA/backend:/usr/src/app homeassistant/home-assistant:dev
 ```
