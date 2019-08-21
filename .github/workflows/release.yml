@@ -1,5 +1,4 @@
-name: Linting
-
+name: Release
 on: 
   release:
   - published
