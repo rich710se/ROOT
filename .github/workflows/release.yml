@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Lint datafiles
-        run: "zip homeassistant.zip -r homeassistant"
+        run: "zip homeassistant.zip -r homeassistant/*"
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v1-release
         with:
