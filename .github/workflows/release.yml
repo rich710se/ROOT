@@ -9,10 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: dummy ref
-        run: 'echo "9" >> file'
+        run: 'echo "10" >> file'
       - name: check ref
         run: |
-          if [ ${{ github.ref }} == $(cat file) ]; then
+          rel=$(echo "${{ github.ref }}" | cut -d '/' -f 3)
+          ver=$(cat file)
+          if [ "$rel" == "$ver" ]; then
             exit 0
           else
             exit 1
