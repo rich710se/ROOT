@@ -8,13 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Lint datafiles
-        run: "zip homeassistant.zip -r homeassistant/*"
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v1-release
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: homeassistant.zip
-          asset_name: homeassistant.zip
-          tag: ${{ github.ref }}
-          overwrite: true
+      - name: dummy ref
+        run: 'echo "9" >> file'
+      - name: check ref
+        run: |
+          if [ ${{ github.ref }} == $(cat file) ]; then
+            exit 0
+          else
+            exit 1
+          fi
