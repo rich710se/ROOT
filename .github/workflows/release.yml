@@ -9,12 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Lint datafiles
-        run: "echo 'aaaa' >> test.txt"
+        run: "zip homeassistant.zip -r homeassistant"
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v1-release
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: test.txt
-          asset_name: mything
+          file: homeassistant.zip
+          #asset_name: mything
           tag: ${{ github.ref }}
           overwrite: true
