@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Install Lokalise CLI
+      - name: Download Lokalise CLI
         run: |
           curl -sSL \
             "https://s3-eu-west-1.amazonaws.com/lokalise-assets/cli/lokalise-0.721-linux-amd64.tgz" \
             -o /tmp/lokalise.tgz
-          tar -xvzf /tmp/lokalise.tgz -C /usr/bin
+          tar -xvzf /tmp/lokalise.tgz
       - name: Downloading translations
         run: |
-          lokalise \
+          /tmp/lokalise \
               --token "${{ secrets.lokalise_token }}" \
               export "190570815d9461966ae081.06523141" \
               --type json \
