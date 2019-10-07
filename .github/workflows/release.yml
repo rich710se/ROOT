@@ -7,9 +7,11 @@ jobs:
     name: Lint JSON with JQ
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Lint datafiles
-      run: |
-        for datafile in repositories/*; do
-          jq --raw-output "." "${datafile}"
-        done
+      - uses: actions/checkout@v1
+      - name: Lint datafiles
+        run: "echo 'aaaa' >> test.txt"
+      - uses: Shopify/upload-to-release
+        with:
+          name: my-artifact
+          path: test.txt
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
