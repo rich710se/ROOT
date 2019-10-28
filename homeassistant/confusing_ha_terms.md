@@ -49,3 +49,18 @@ HassOS is a OS based on buildroot, that ships with Hassio (and therefore also Ho
 [More information about HassOS](https://github.com/home-assistant/hassos)
 
 There are images available for many boards, as well as hypervisors.
+
+## Hassbian
+
+_Bonus round._
+
+Hassbian was the first OS that came with Home Assistant pre installed in a python venv., it is (was) a customized version of Raspbian lite.
+
+
+# Compararable to:
+
+Part | comarable to
+-- | --
+Home Assistant | Word, Excel, Chrome (Software)
+Hassio | Office, Adobe (Suites of software)
+HassOS / Hassbian | Windows, MacOS, Ubuntu (OS (Operating Systems))
