@@ -59,7 +59,7 @@ Hassbian was the first OS that came with Home Assistant pre installed in a pytho
 
 # Compararable to:
 
-Part | comarable to
+Part | comparable to
 -- | --
 Home Assistant | Word, Excel, Chrome (Software)
 Hassio | Office, Adobe (Suites of software)
