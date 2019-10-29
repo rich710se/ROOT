@@ -57,10 +57,46 @@ _Bonus round._
 Hassbian was the first OS that came with Home Assistant pre installed in a python venv., it is (was) a customized version of Raspbian lite.
 
 
-# Compararable to:
+# Compararable to
 
 Part | comparable to
 -- | --
 Home Assistant | Word, Excel, Chrome (Software)
 Hassio | Office, Adobe (Suites of software)
 HassOS / Hassbian | Windows, MacOS, Ubuntu (OS (Operating Systems))
+
+# One last thing
+
+_You can add some stuff to your system._
+
+## Add-ons
+
+_Wait... What now?_
+
+Add-ons are (for the most part) pre exsisting software wrapped in a spesial way so Hassio know how to run them.
+These are all standalone containers (docker lingo), and as noted earlier Add-ons are **only** available on Hassio installations.
+
+_Although_ the add-ons are only available for Hassio installation, these (again, for the most part) are "just" wrappers for software you can install manually if Hassio is not your cup of tea.
+
+_NB!: This is not integrations_
+
+[More information about Add-ons and some examples of ones]([More information about HassOS](https://github.com/home-assistant/hassos))
+
+## Integrations
+
+_Flavore with sparkels and rainbows._
+
+Integrations allow you to add additional functions/data to your Home Assistant installation.
+**Every** Installation of Home Assistant have integrations, this is the things you add to your `configuration.yaml` and/or in the UI of Home Assistant under "Integrations"
+
+Earlier this was called "Components", cummunity managed integrations are still refered to as custom_component(s).
+
+_NB!: This is not add-ons
+
+
+# Compararable to
+
+Part | comparable to
+-- | --
+Add-ons | Word, Excel, Chrome (Software)
+Integrations | I don't know, the save/print function in Word maybe?
