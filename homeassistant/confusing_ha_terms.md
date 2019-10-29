@@ -84,7 +84,7 @@ _NB!: This is not integrations_
 
 ## Integrations
 
-_Flavore with sparkels and rainbows._
+_Flavor with sparkels and rainbows._
 
 Integrations allow you to add additional functions/data to your Home Assistant installation.
 **Every** Installation of Home Assistant have integrations, this is the things you add to your `configuration.yaml` and/or in the UI of Home Assistant under "Integrations"
