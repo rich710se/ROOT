@@ -80,7 +80,7 @@ _Although_ the add-ons are only available for Hassio installation, these (again,
 
 _NB!: This is not integrations_
 
-[More information about Add-ons and some examples of ones]([More information about HassOS](https://github.com/home-assistant/hassos))
+[More information about Add-ons and some examples of ones](https://addons.community/)
 
 ## Integrations
 
@@ -92,6 +92,8 @@ Integrations allow you to add additional functions/data to your Home Assistant i
 Earlier this was called "Components", cummunity managed integrations are still refered to as custom_component(s).
 
 _NB!: This is not add-ons
+
+[A list of Integrations in Home Assistant](https://www.home-assistant.io/integrations/)
 
 
 # Compararable to
