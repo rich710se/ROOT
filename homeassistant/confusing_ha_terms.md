@@ -29,6 +29,8 @@ Some popular abbrevations of Home Assistant:
 - **H**ome **A**ssistant (HA)
 - **H**ome **Ass**istant (Hass)
 
+To add to the confusion, HA is also used as an abbrevation for "Home Automation" so... sorry?
+
 [More information about Home Assistant](https://www.home-assistant.io/)
 
 ## Hassio / Hass.io
