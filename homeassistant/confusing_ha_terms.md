@@ -1,6 +1,21 @@
 # Confusing HA terms
 
-_Home Assistant, Hassio, HassOS, HA, Hass, WTF?_
+_Home Automation, Home Assistant, Hassio, HassOS, HA, Hass, WTF?_
+
+# Home Automation
+
+There are a lot of systems that offer Home Automation capabilities, Home Assistant is just on of them.
+
+Other popular systems in this space are:
+
+- [Domoticz](https://www.domoticz.com/)
+- [Alexa](https://en.wikipedia.org/wiki/Amazon_Alexa)
+- [Google Assistant](https://assistant.google.com/)
+- [openHAB](https://www.openhab.org/)
+- [Homey](https://homey.app/)
+- [SmartThings](https://www.smartthings.com/)
+
+_And many many many more, as a base part of their core they allow you control/moitor your smart home or make your dumb home smarter._
 
 ## Home Assistant
 
@@ -38,7 +53,7 @@ When you use one of the Hassio installers (HassOS/Generic linux) you get a set o
 - Hassio can be installed on _any_ linux OS.
 - Hassio does not have automations
 - Hassio does not have integrations
-. The add-on store is _only_ available _if_ you installed Home Assistant with Hassio.
+- The add-on store is _only_ available _if_ you installed Home Assistant with Hassio.
 
 [More information about Hassio](https://www.home-assistant.io/hassio/)
 
@@ -57,7 +72,7 @@ _Bonus round._
 Hassbian was the first OS that came with Home Assistant pre installed in a python venv., it is (was) a customized version of Raspbian lite.
 
 
-# Compararable to
+## Compararable to
 
 Part | comparable to
 -- | --
@@ -91,12 +106,12 @@ Integrations allow you to add additional functions/data to your Home Assistant i
 
 Earlier this was called "Components", cummunity managed integrations are still refered to as custom_component(s).
 
-_NB!: This is not add-ons
+_NB!: This is not add-ons_
 
 [A list of Integrations in Home Assistant](https://www.home-assistant.io/integrations/)
 
 
-# Compararable to
+## Compararable to
 
 Part | comparable to
 -- | --
