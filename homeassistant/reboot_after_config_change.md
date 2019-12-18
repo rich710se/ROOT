@@ -19,6 +19,7 @@ There are 4 things you can reload.
 - Groups
 - Automations
 - Scripts
+- Scenes
 
 Hitting these buttons **will** reload configurations for that part.
 All other changes needs a restart of Home Assistant, **NOT** the host...
