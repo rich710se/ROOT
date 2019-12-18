@@ -17,7 +17,7 @@ Other popular systems in this space are:
 
 _And many many many more, as a base part of their core they allow you control/moitor your smart home or make your dumb home smarter._
 
-## Home Assistant
+# Home Assistant
 
 _Let's start with an easy one._
 
